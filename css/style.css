@@ -104,7 +104,7 @@ h1, h2, h3 {
           align-items: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1258px) {
   .header__menu {
     position: fixed;
     width: 100%;
@@ -131,13 +131,7 @@ h1, h2, h3 {
   margin-right: 15px;
 }
 
-@media (max-width: 1110px) {
-  .header__menu-list {
-    margin-right: 7px;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1258px) {
   .header__menu-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -157,7 +151,7 @@ h1, h2, h3 {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1258px) {
   .header__menu-item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -185,14 +179,14 @@ h1, h2, h3 {
   width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1258px) {
   .header__menu-link {
     color: #fff;
     font-size: 22px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1258px) {
   .header .button {
     background: #fff;
     color: #1984E7;
@@ -255,15 +249,15 @@ h1, h2, h3 {
   transition: background .3s, transform .3s, top .3s, -webkit-transform .3s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1258px) {
   .menu-btn {
     display: block;
   }
 }
 
 #menu-checkbox:checked ~ .header__menu {
-  -webkit-clip-path: circle(1350px at top right);
-          clip-path: circle(1350px at top right);
+  -webkit-clip-path: circle(1550px at top right);
+          clip-path: circle(1550px at top right);
 }
 
 #menu-checkbox:checked ~ .header__menu .button {
@@ -475,6 +469,41 @@ h1, h2, h3 {
 
 @media (max-width: 768px) {
   .gallery__img_first {
+    width: 100%;
+  }
+}
+
+.volunteers {
+  padding: 70px 0;
+  background: #F5F5F5;
+}
+
+@media (max-width: 1024px) {
+  .volunteers {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteers {
+    padding: 40px 0;
+  }
+}
+
+.volunteers__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.volunteers iframe {
+  display: block;
+  width: 50%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .volunteers iframe {
     width: 100%;
   }
 }
@@ -715,11 +744,43 @@ h1, h2, h3 {
 
 .footer .button img {
   width: 40px;
+  -webkit-animation: arrow 1s infinite;
+          animation: arrow 1s infinite;
 }
 
 .footer__copy {
   color: #fff;
   font-size: 20px;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 ::-webkit-scrollbar {
